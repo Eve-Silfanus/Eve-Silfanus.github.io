@@ -1,0 +1,14 @@
+<script>
+    var ships=[0,0,0,0,0];
+    var rand=Math.floor(Math.random()*5);
+    ships[rand]=1;
+    console.log(ships);
+    var inp=0;
+    var c=0;
+    while(ships[inp-1]!==1)
+        {
+            inp= prompt("Which battleship?");
+            c++;
+        }
+    alert("Game Over!",c);
+</script>
